@@ -1,8 +1,7 @@
 package flights;
 import java.util.Date;
- 
-public class Flights {
 
+public class Flights {
     private String airline;
     private String flightNo;
     private Date departureTime;
@@ -12,7 +11,7 @@ public class Flights {
     private String airport;
     private int price;
     private int seatAvailability;
-    
+
 
     public Flights (String airline, String flightNo, Date departureTime, Date arrivalTime, String departureDest, String arrivalDest, String airport,int price, int seatAvailability) {
         this.airline = airline;
@@ -41,11 +40,11 @@ public class Flights {
     public Date getArrivalTime(){
         return arrivalTime;
     }
-  
+
     public String getDepartureDest() {
         return departureDest;
     }
-   
+
     public String getArrivalDest() {
         return arrivalDest;
     }
@@ -57,7 +56,7 @@ public class Flights {
     public int getPrice(){
         return price;
     }
-   
+
     public int getSeatAvailabilty(){
         return seatAvailability;
     }
