@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e0c3381d8515018dbdd76f7ec1106a46258bb47d
   <component name="CheckStyle-IDEA-workspace">
     <option name="configuration">
       <map>
@@ -7,6 +11,7 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -17,4 +22,12 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK" />
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+>>>>>>> d453751e4557da558499ba8e9ce16f9ea5440fb9
+>>>>>>> e0c3381d8515018dbdd76f7ec1106a46258bb47d
 </project>
