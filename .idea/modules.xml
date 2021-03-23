@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/cluster8_flights.iml" filepath="$PROJECT_DIR$/.idea/cluster8_flights.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/cluster8_flights.iml" filepath="$PROJECT_DIR$/cluster8_flights.iml" />
+>>>>>>> d453751e4557da558499ba8e9ce16f9ea5440fb9
     </modules>
   </component>
 </project>
