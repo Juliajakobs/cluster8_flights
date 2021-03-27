@@ -10,4 +10,8 @@ public class searchController {
     public List<Flight>  searchFlights(String departureDest, String arrDest, Date depTime, Date arrTime, int passengers ){
         return dbManager.searchFlightRoutes(departureDest, arrDest, depTime, arrTime, passengers);
     }
+
+    public List<Flight> getDepartures(String dep){
+        return dbManager.getDepartureTimes(dep);
+    }
 }

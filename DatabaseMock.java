@@ -57,5 +57,16 @@ public class DatabaseMock {
             System.out.println(flightList);
             return flightList;
     }
+
+    public List <Flight> getDepartureTimes(String dep){
+        List<Flight> depTime = new ArrayList<>();
+        for(Flight flight : flights){
+            if(flight.getDepartureDest().equals(dep)){
+                depTime.add(flight);
+            }
+        }
+        return depTime;
+
+    }
 }
 

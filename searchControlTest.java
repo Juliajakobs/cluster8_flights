@@ -32,5 +32,10 @@ public class searchControlTest {
     public void searchMissingParams() throws Exception {
         assertEquals(testSearcher.searchFlights("IAC","F109",new Date(2021 - 15 - 6),new Date(2021 - 15 - 6),3).size(),0);
     }
+    @Test
+    // searching for a destination returns date
+    public  void searchDates() throws Exception{
+        assertEquals(testSearcher.getDepartures("Egilsstaðir").get(0).getDepartureTime(),new Date(2021 - 5 - 11));
+    }
 
 }
