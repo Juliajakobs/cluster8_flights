@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class searchController {
 
-    public DatabaseMock dbManager = new DatabaseMock();
+   /* public DatabaseMock dbManager = new DatabaseMock();
 
 
     public List<Flight>  searchFlights(String departureDest, String arrDest, Date depTime, Date arrTime, int passengers ){
@@ -13,5 +13,5 @@ public class searchController {
 
     public List<Flight> getDepartures(String dep){
         return dbManager.getDepartureTimes(dep);
-    }
+    }*/
 }

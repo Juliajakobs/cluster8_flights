@@ -1,0 +1,5 @@
+.backgroundPane{
+ -fx-background-image: url("sky.jpg");
+ -fx-background-size: 100% 100%;
+}
+

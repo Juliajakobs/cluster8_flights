@@ -1,4 +1,4 @@
-package flights;
+/*package flights;
 import java.util.*;
 
 public class DatabaseMock {
@@ -24,14 +24,14 @@ public class DatabaseMock {
         String arrivalDest4 = "Ísafjörður";
 
 
-        Flight flight1 = new flights.Flight("IAC", "F109", date1, date1, departureDest1, arrivalDest2, "VE", 25000, 50);
-        Flight flight2 = new flights.Flight("IAC", "F105", date2, date2, departureDest2, arrivalDest1, "REY", 15000, 12);
+        Flight flight1 = new flights.Flight("IAC", "F109", date1, date1, departureDest1, arrivalDest2, "REY", 25000, 50);
+        Flight flight2 = new flights.Flight("IAC", "F105", date2, date2, departureDest2, arrivalDest1, "VE", 13000, 12);
 
-        Flight flight3 = new flights.Flight("Ernir", "F121", date3, date3, departureDest1, arrivalDest3, "EG", 24000, 95);
-        Flight flight4 = new flights.Flight("AIC", "F109", date3, date3, departureDest3, departureDest1, "REY", 13000, 55);
+        Flight flight3 = new flights.Flight("Ernir", "F121", date3, date3, departureDest1, arrivalDest3, "REY", 24000, 95);
+        Flight flight4 = new flights.Flight("AIC", "F109", date3, date3, departureDest3, departureDest1, "EGS", 13000, 55);
 
-        Flight flight5 = new flights.Flight("Ernir", "F104", date4, date4, departureDest1, departureDest4, "ÍSF", 30000, 14);
-        Flight flight6 = new flights.Flight("IAC", "F112", date5, date5, arrivalDest4, arrivalDest1, "REY", 35000, 1);
+        Flight flight5 = new flights.Flight("Ernir", "F104", date4, date4, departureDest1, arrivalDest4, "REY", 30000, 14);
+        Flight flight6 = new flights.Flight("IAC", "F112", date5, date5, departureDest4, arrivalDest1, "ÍSF", 35000, 1);
 
         flights.add(flight1);
         flights.add(flight2);
@@ -49,12 +49,11 @@ public class DatabaseMock {
                         flight.getArrivalDest().equals(arrDest) &&
                         flight.getDepartureTime().equals(depTime) &&
                         flight.getArrivalTime().equals(arrTime) &&
-                        flight.getSeatAvailabilty() > passengers
+                        flight.getSeatAvailability() > passengers
                 ) {
                     flightList.add(flight);
                 }
             }
-            System.out.println(flightList);
             return flightList;
     }
 
@@ -66,7 +65,45 @@ public class DatabaseMock {
             }
         }
         return depTime;
-
     }
+
+    public ArrayList<Flight> getSeatsAvailable(int number){
+        ArrayList<Flight> match = new ArrayList();
+        for (Flight flight : flights){
+            if (flight.getSeatAvailability()>=number){
+                match.add(flight);
+            }
+        }
+        return match;
+    }
+
+    public ArrayList<Flight> findPrice(String dep, String arr, Date date){
+        ArrayList<Flight> price = new ArrayList<>();
+        for(Flight flight : flights){
+            if(flight.getDepartureDest().equals(dep) &&
+                flight.getArrivalDest().equals(arr)&&
+                flight.getDepartureTime().equals(date)){
+                price.add(flight);
+            }
+        }
+        return price;
+    }
+
+    public ArrayList <Flight> getCheapestFlight(){
+       ArrayList<Flight> cheapest = new ArrayList<>();
+       double min = Double.POSITIVE_INFINITY;
+        for(Flight flight: flights){
+            if(flight.getPrice() <= min){
+                System.out.println(flight.getPrice());
+                min=flight.getPrice();
+            }
+            cheapest.add(flight);
+            System.out.println(min);
+        }
+        System.out.println(cheapest);
+        return cheapest;
+    }
+
 }
 
+*/
